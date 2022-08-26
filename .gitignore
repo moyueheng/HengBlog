@@ -122,3 +122,4 @@ dmypy.json
 .pyre/
 tmp
 *.pid
+test_app
