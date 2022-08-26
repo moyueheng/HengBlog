@@ -18,11 +18,13 @@ from django.urls import path, include, re_path
 from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.staticfiles.views import serve
 
 urlpatterns = [
+    path('favicon.ico', serve, {'path': 'logo.png'}),
+
     path("i18n/", include("django.conf.urls.i18n")),
 ]
-
 
 if settings.DEBUG is False:
     urlpatterns += static(
