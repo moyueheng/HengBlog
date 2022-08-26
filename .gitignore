@@ -1,8 +1,4 @@
-test*
-temp*
 info
-static
-mystatic
 uwsgi_server
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -122,4 +118,3 @@ dmypy.json
 .pyre/
 tmp
 *.pid
-test_app
